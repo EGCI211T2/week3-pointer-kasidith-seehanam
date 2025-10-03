@@ -10,7 +10,7 @@ int main(int argc,char *argv[]){
 
   pa=new int[n];
 
-  for(i=0; i<n; i++){
+  for(i=0; i<n; i++, pa++){
 
    // cout<<"Input no."<<i<<":";
 
@@ -18,7 +18,7 @@ int main(int argc,char *argv[]){
 
     *pa=atoi(argv[i+1]);
 
-    pa++;
+   
 
   }
 cout <<"How many numbers?";
