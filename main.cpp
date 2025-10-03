@@ -21,17 +21,7 @@ int main(int argc,char *argv[]){
    
 
   }
-cout <<"How many numbers?";
-cin >> n;
-pa = new int[n];
-pb = new int[n];
- 
-for(i=0; i<n; i++)
-{
-cout << "Input "<< i+1 <<" :";
-cin >> *pa;
-pa++;
-}
+
 pa-=n;
 
 cout<<"Original: ";
@@ -70,7 +60,7 @@ for (i=0; i<n-1; i++ ,pa++){
   //cout<<pa<<endl;
 }
 cout<<setw(3)<<*pa<<endl;
-
+pa-=n-1;
 delete []pa;
 return 0;
 }
